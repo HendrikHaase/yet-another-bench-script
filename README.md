@@ -7,13 +7,13 @@ Logo design by [Dian Pratama](https://github.com/dianp)
 ## How to Run
 
 ```
-curl -sL https://github.com/HendrikHaase/yet-another-bench-script/blob/master/yabs.sh | bash
+curl -sL https://raw.githubusercontent.com/HendrikHaase/yet-another-bench-script/refs/heads/master/yabs.sh | bash
 ```
 
 or 
 
 ```
-wget -qO- https://github.com/HendrikHaase/yet-another-bench-script/blob/master/yabs.sh | bash
+wget -qO- https://raw.githubusercontent.com/HendrikHaase/yet-another-bench-script/refs/heads/master/yabs.sh | bash
 ```
 
 **High Bandwidth Usage Notice**: By default, this script will perform many iperf network tests, which will try to max out the network port for ~20s per location (10s in each direction). Low-bandwidth servers (such as a NAT VPS) should consider running this script with the `-r` flag (for reduced iperf locations) or the `-i` flag (to disable network tests entirely).
@@ -23,7 +23,7 @@ wget -qO- https://github.com/HendrikHaase/yet-another-bench-script/blob/master/y
 ### Flags (Skipping Tests, Reducing iperf Locations, Geekbench 4/5/6, etc.)
 
 ```
-curl -sL https://github.com/HendrikHaase/yet-another-bench-script/blob/master/yabs.sh | bash -s -- -flags
+curl -sL https://raw.githubusercontent.com/HendrikHaase/yet-another-bench-script/refs/heads/master/yabs.sh | bash -s -- -flags
 ```
 
 | Flag | Description |
@@ -52,7 +52,7 @@ Options can be grouped together to skip multiple tests, i.e. `-fg` to skip the d
 Results from running this script can be sent to your benchmark results website of choice in JSON format. Invoke the `-s` flag and pass the URL to where the results should be submitted to:
 
 ```
-curl -sL https://github.com/HendrikHaase/yet-another-bench-script/blob/master/yabs.sh | bash -s -- -s "https://example.com/yabs/post"
+curl -sL https://raw.githubusercontent.com/HendrikHaase/yet-another-bench-script/refs/heads/master/yabs.sh | bash -s -- -s "https://example.com/yabs/post"
 ```
 
 JSON results can be sent to multiple endpoints by entering each site joined by a comma (e.g. "https://example.com/yabs/post,http://example.com/yabs2/post").
