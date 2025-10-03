@@ -17,7 +17,7 @@ YABS_VERSION="v2025-04-20"
 echo -e '# ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## #'
 echo -e '#              Yet-Another-Bench-Script              #'
 echo -e '#                     '$YABS_VERSION'                    #'
-echo -e '# https://github.com/masonr/yet-another-bench-script #'
+echo -e '# https://github.com/HendrikHaase/yet-another-bench-script #'
 echo -e '# ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## #'
 
 echo -e
@@ -627,7 +627,7 @@ elif [ -z "$SKIP_FIO" ]; then
 
     # Display warning if conditions are met
     if [[ $warning -eq 1 ]];then
-        echo -en "\nWarning! You are running YABS on a ZFS Filesystem and your disk space is too low for the fio test. Your test results will be inaccurate. You need at least $mul_spa GB free in order to complete this test accurately. For more information, please see https://github.com/masonr/yet-another-bench-script/issues/13\n"
+        echo -en "\nWarning! You are running YABS on a ZFS Filesystem and your disk space is too low for the fio test. Your test results will be inaccurate. You need at least $mul_spa GB free in order to complete this test accurately. For more information, please see https://github.com/HendrikHaase/yet-another-bench-script/issues/13\n"
     fi
 fi
 
